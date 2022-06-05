@@ -1,0 +1,467 @@
+/* синий цвет #2196F3 */
+/* черный цвет - заголовки и навигация #212121 */
+/* белый цвет #FFFFFF */
+/* черный в лого #000000    и белый в лого  #FFFFFF */
+/* фоновый Наша команда #F5F4FA  --- фоновый в чем мы занимаемся - #E5E5E5 */
+/* серый текст - #757575 */
+/* фон кнопок в портфолио - #F5F4FA */
+/* font weight = 400, 500, 700, 900,  */
+
+:root {
+  --accent: #2196f3;
+  --text-color: #757575;
+  --background-team: #f5f4fa;
+  --header-logo: #000000;
+  --titles: #212121;
+  --navigation: #212121;
+  --white-colour: #ffffff;
+  --btn-portfolio: #212121;
+  --portfolio-btn-background: #f5f4fa;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+.container {
+  margin: 0px auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  width: 1200px;
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.accent {
+  color: var(--accent);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------HEADER---------------------------  */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: var(--white-colour);
+  border: 1px solid #ececec;
+}
+
+.header-nav {
+  margin-right: 331px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--header-logo);
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--accent);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--navigation);
+}
+
+.header-email,
+.header-tel {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: inherit;
+}
+
+.active {
+  color: var(--accent);
+}
+
+/* --------------------------------STUDIO PAGE  ---------------------------  */
+/* --------------------------------HEROES section---------------------------  */
+.hero-section {
+  background-color: #2f303a;
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  min-width: 696px;
+
+  padding-left: 252px;
+  padding-right: 252px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-colour);
+}
+
+.hero-button {
+  margin: 30px auto 0 auto;
+  padding: 0;
+
+  display: block;
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--white-colour);
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/* --------------------------------FEATURES section---------------------------  */
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--white-colour);
+}
+
+/* для скрытых заголовков */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--titles);
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-text {
+  margin-top: 10px;
+
+  line-height: 1.71;
+}
+
+/* --------------------------------PRODUCT&TEAM section---------------------------  */
+
+.product-section {
+  background-color: var(--white-colour);
+}
+
+.product-list {
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.product-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-section {
+  background-color: var(--background-team);
+}
+
+.team-item {
+  margin-right: 30px;
+
+  width: 270px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child {
+  margin-right: 0px;
+}
+
+.product-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--titles);
+}
+
+.team-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--titles);
+}
+
+.team-list {
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.team-text {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.card {
+  background-color: var(--white-colour);
+}
+
+/* ---------------------------!!!PORTFOLIO PAGE!!! ---------------------------  */
+
+/*----------------- Portfolio filter buttons ------------------------ */
+
+.portfolio-btn {
+  padding: 6px 22px;
+
+  display: block;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: var(--btn-portfolio);
+  background-color: var(--portfolio-btn-background);
+  border-radius: 4px;
+  border: 0ch;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-colour);
+  background-color: var(--accent);
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.current {
+  background-color: var(--accent);
+  color: var(--white-colour);
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.examples {
+  margin-top: 50px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 370px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.bottom-part {
+  padding: 20px 24px;
+
+  border: 1px #eeeeee;
+  border-style: none solid solid solid;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--titles);
+}
+
+.portfolio-text {
+  margin-top: 4px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+
+/* --------------------------------FOOTER ---------------------------  */
+
+.footer {
+  background: #2f303a;
+}
+.footer-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-logo {
+  display: inline-block;
+  color: var(--white-colour);
+}
+
+.footer-address {
+  margin-top: 20px;
+
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer .address {
+  color: var(--white-colour);
+}
+
+.footer-item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent);
+}
