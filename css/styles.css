@@ -83,24 +83,26 @@ img {
 }
 
 .header {
+  border-bottom: 1px solid #ececec;
+
   background: var(--white-colour);
-  border: 1px solid #ececec;
 }
 
 .header-nav {
-  margin-right: 331px;
-
   display: flex;
   align-items: center;
 }
 
 .header-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
 
   display: flex;
   align-items: center;
 }
+
+/* .header-list.contacts {
+  margin-left: auto;
+} */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -128,8 +130,8 @@ img {
 }
 
 .header-link {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -140,8 +142,8 @@ img {
 
 .header-email,
 .header-tel {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -157,19 +159,15 @@ img {
 /* --------------------------------STUDIO PAGE  ---------------------------  */
 /* --------------------------------HEROES section---------------------------  */
 .hero-section {
+  padding: 200px 0px;
+
   background-color: #2f303a;
 }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .hero-title {
-  min-width: 696px;
+  margin: 0 auto;
 
-  padding-left: 252px;
-  padding-right: 252px;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -263,6 +261,8 @@ img {
 /* --------------------------------PRODUCT&TEAM section---------------------------  */
 
 .product-section {
+  padding-top: 0px;
+
   background-color: var(--white-colour);
 }
 
@@ -382,6 +382,8 @@ img {
 }
 
 .portfolio-list {
+  margin-top: 50px;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -399,6 +401,10 @@ img {
 
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.portfolio-link {
+  display: block;
 }
 
 .bottom-part {
@@ -430,11 +436,9 @@ img {
 /* --------------------------------FOOTER ---------------------------  */
 
 .footer {
+  padding: 60px 0px;
+
   background: #2f303a;
-}
-.footer-container {
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 .footer-logo {
